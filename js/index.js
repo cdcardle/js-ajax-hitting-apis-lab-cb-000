@@ -29,8 +29,3 @@ function displayCommits() {
   const commits = JSON.parse(this.responseText);
 
 }
-
-
-
-//
-// `<li>${repo.name} - <a href="#" data-repo="${repo.name}" onclick="getCommits(this)">Get Commits</a></li>`).join('')}</ul>`;
