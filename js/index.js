@@ -1,7 +1,7 @@
-function displayCommits() {
-  const commits = JSON.parse(this.responseText);
-
-}
+// function displayCommits() {
+//   const commits = JSON.parse(this.responseText);
+// 
+// }
 
 function getRepositories() {
   let username = document.getElementById('username').value;
