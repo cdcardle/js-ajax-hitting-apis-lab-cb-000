@@ -6,6 +6,6 @@ function getRepositories() {
   req.send();
 }
 
-fucntion showRepositories() {
+function showRepositories() {
 
 }
