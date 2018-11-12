@@ -1,4 +1,3 @@
-let gitHubUsers = 'https://api.github.com/users';
 let username = document.getElementById('username').value;
 
 function getRepositories() {
@@ -24,8 +23,8 @@ function displayRepositories() {
 //   req.open('GET', `https://api.github.com/repos/${username}/${name} + '/commits`);
 //   req.send();
 // }
-// 
+//
 // function displayCommits() {
 //   const commits = JSON.parse(this.responseText);
-// 
+//
 // }
