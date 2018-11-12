@@ -12,8 +12,8 @@ function getRepositories() {
 
 function displayRepositories() {
   let repos = JSON.parse(this.responseText);
-  let li = `<li>r.name - <a href="#" data-repo="r.name" onclick="getCommits(this)">Get Commits</a></li>`;
-  const repoList = `<ul>${repos.map(r => ${li}).join('')}</ul>`;
+  const repoList = `<ul>${repos.map(repo => ` + `<li>${repo.name} - <a href="#" data-repo="${repo.name}" onclick="getCommits(this)">Get Commits</a></li>` + `)
+  .join('')}</ul>`;
   document.getElementById('repositories').innerHTML = repoList;
 }
 
@@ -29,3 +29,8 @@ function displayCommits() {
   const commits = JSON.parse(this.responseText);
 
 }
+
+
+
+//
+// `<li>${repo.name} - <a href="#" data-repo="${repo.name}" onclick="getCommits(this)">Get Commits</a></li>`).join('')}</ul>`;
